@@ -1,0 +1,20 @@
+{
+  "bgv3-app-local": {
+    "display:order": 5,
+    "conn:wshenabled": true,
+    "conn:shellpath": "/bin/zsh",
+    "term:theme": "one-dark",
+    "term:fontfamily": "Berkeley Mono",
+    "term:fontsize": 14,
+    "cmd:initscript.zsh": "/Users/david/.config/waveterm/scripts/bgv3_init.zsh"
+  },
+  "staging-refresh-local": {
+    "display:order": 6,
+    "conn:wshenabled": true,
+    "conn:shellpath": "/bin/zsh",
+    "term:theme": "one-dark",
+    "term:fontfamily": "Berkeley Mono",
+    "term:fontsize": 14,
+    "cmd:initscript.zsh": "/Users/david/.config/waveterm/scripts/staging_refresh_init.zsh"
+  }
+}

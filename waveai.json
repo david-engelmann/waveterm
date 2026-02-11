@@ -1,0 +1,81 @@
+{
+  "ollama-llama": {
+    "display:name": "Ollama - Llama 3.3",
+    "display:order": 1,
+    "display:icon": "microchip",
+    "display:description": "Local Llama 3.3 70B via Ollama (primary general model)",
+    "ai:apitype": "openai-chat",
+    "ai:model": "llama3.3:70b",
+    "ai:thinkinglevel": "medium",
+    "ai:endpoint": "http://localhost:11434/v1/chat/completions",
+    "ai:apitoken": "ollama"
+  },
+  "ollama-deepseek-coder": {
+    "display:name": "Ollama - DeepSeek Coder V2.5",
+    "display:order": 2,
+    "display:icon": "microchip",
+    "display:description": "Local DeepSeek coder via Ollama (primary coding model)",
+    "ai:apitype": "openai-chat",
+    "ai:model": "deepseek-coder-v2.5:latest",
+    "ai:thinkinglevel": "high",
+    "ai:endpoint": "http://localhost:11434/v1/chat/completions",
+    "ai:apitoken": "ollama"
+  },
+  "lmstudio-qwen": {
+    "display:name": "LM Studio - Qwen",
+    "display:order": 3,
+    "display:icon": "server",
+    "display:description": "Local Qwen model via LM Studio (secondary local backend)",
+    "ai:apitype": "openai-chat",
+    "ai:model": "qwen/qwen-2.5-coder-32b-instruct",
+    "ai:thinkinglevel": "medium",
+    "ai:endpoint": "http://localhost:1234/v1/chat/completions",
+    "ai:apitoken": "not-needed"
+  },
+  "vllm-local": {
+    "display:name": "vLLM",
+    "display:order": 4,
+    "display:icon": "server",
+    "display:description": "High-throughput local model via vLLM",
+    "ai:apitype": "openai-chat",
+    "ai:model": "your-model-name",
+    "ai:thinkinglevel": "medium",
+    "ai:endpoint": "http://localhost:8000/v1/chat/completions",
+    "ai:apitoken": "not-needed"
+  },
+  "openai-gpt4o-mini": {
+    "display:name": "OpenAI - GPT-4o-mini",
+    "display:order": 10,
+    "display:icon": "cloud",
+    "display:description": "Cheap & fast cloud model for overflow",
+    "ai:provider": "openai",
+    "ai:model": "gpt-4o-mini"
+  },
+  "openai-gpt41": {
+    "display:name": "OpenAI - GPT-4.1",
+    "display:order": 11,
+    "display:icon": "cloud",
+    "display:description": "High-quality OpenAI model for hard problems",
+    "ai:provider": "openai",
+    "ai:model": "gpt-4.1"
+  },
+  "openrouter-qwen": {
+    "display:name": "OpenRouter - Qwen Coder 32B",
+    "display:order": 20,
+    "display:icon": "cloud",
+    "display:description": "Remote Qwen coder via OpenRouter",
+    "ai:provider": "openrouter",
+    "ai:model": "qwen/qwen-2.5-coder-32b-instruct",
+    "ai:capabilities": [
+      "tools"
+    ]
+  },
+  "google-gemini-3-pro": {
+    "display:name": "Gemini 3 Pro",
+    "display:order": 30,
+    "display:icon": "cloud",
+    "display:description": "Google Gemini for multimodal / web-ish tasks",
+    "ai:provider": "google",
+    "ai:model": "gemini-3-pro-preview"
+  } 
+}

@@ -1,0 +1,84 @@
+{
+  "project-shell": {
+    "icon": "terminal",
+    "label": "Project Shell",
+    "color": "#c3c8c2",
+    "display:order": 5,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "shell",
+        "term:localshellpath": "/bin/zsh",
+        "cmd:cwd": "/Users/david/bg/bgv3"
+      }
+    }
+  },
+  "git-status": {
+    "icon": "code-branch",
+    "label": "Git Status",
+    "color": "#66ccff",
+    "display:order": 10,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "cmd",
+        "term:localshellpath": "/bin/zsh",
+        "cmd:cwd": "/Users/david/bg/bgv3",
+        "cmd": "git status",
+        "cmd:runonstart": true,
+        "cmd:clearonstart": true,
+        "cmd:closeonexit": false
+      }
+    }
+  },
+  "tail-logs": {
+    "icon": "file-lines",
+    "label": "Tail Logs",
+    "color": "#ffcc66",
+    "display:order": 15,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "shell",
+        "term:localshellpath": "/bin/zsh",
+        "cmd:cwd": "/Users/david/bg/bgv3",
+        "cmd:initscript.zsh": "cd /Users/david/bg/bgv3 || cd ~; echo '[wave] tail -n 200 ./logs/app.log (edit path in widgets.json)'; tail -n 200 ./logs/app.log"
+      }
+    }
+  },
+  "files-bgv3": {
+    "icon": "folder",
+    "label": "Files",
+    "color": "#c3c8c2",
+    "display:order": 20,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "shell",
+        "term:localshellpath": "/bin/zsh",
+        "cmd:cwd": "/Users/david/bg/bgv3",
+        "cmd": "wsh view ~",
+        "cmd:runonstart": true,
+        "cmd:clearonstart": false,
+        "cmd:closeonexit": false
+      }
+    }
+  },
+  "wave-config": {
+    "icon": "gear",
+    "label": "Wave Config",
+    "color": "#c3c8c2",
+    "display:order": 30,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "cmd",
+        "term:localshellpath": "/bin/zsh",
+        "cmd": "wsh wavepath config && ls -1 $(wsh wavepath config)",
+        "cmd:runonstart": true,
+        "cmd:clearonstart": false,
+        "cmd:closeonexit": false
+      }
+    }
+  }
+}

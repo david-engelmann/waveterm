@@ -1,0 +1,20 @@
+{
+  "app:dismissarchitecturewarning": true,
+  "autoupdate:enabled": true,
+  "autoupdate:channel": "beta",
+  "window:fullscreenonlaunch": true,
+  "window:transparent": true,
+  "window:blur": true,
+  "window:opacity": 0.9,
+  "window:zoom": 1,
+  "term:fontfamily": "Berkeley Mono",
+  "term:fontsize": 14,
+  "term:theme": "one-dark",
+  "term:scrollback": 5000,
+  "term:copyonselect": true,
+  "term:transparency": 0.15,
+  "tab:preset": "bg@bgv3-dev",
+  "widget:showhelp": false,
+  "waveai:defaultmode": "ollama-deepseek-coder",
+  "waveai:showcloudmodes": false
+}
