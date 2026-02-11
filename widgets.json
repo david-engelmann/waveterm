@@ -80,5 +80,53 @@
         "cmd:closeonexit": false
       }
     }
+  },
+  "docker-stats": {
+    "icon": "brands@docker",
+    "color": "#2496ED",
+    "label": "docker",
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "cmd",
+        "cmd": "docker stats --no-stream",
+        "cmd:clearonstart": true
+      }
+    }
+  },
+  "k8s-pods": {
+    "icon": "cubes",
+    "label": "pods",
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "cmd",
+        "cmd": "kubectl get pods -A --sort-by=.metadata.creationTimestamp",
+        "cmd:clearonstart": true
+      }
+    }
+  },
+  "ci-dashboard": {
+    "icon": "circle-check",
+    "color": "#28a745",
+    "label": "CI/CD",
+    "blockdef": {
+      "meta": {
+        "view": "web",
+        "url": "https://github.com/beatgig/bgv3/actions",
+        "pinnedurl": "https://github.com/beatgig/bgv3/actions"
+      }
+    }
+  },
+  "grafana": {
+    "icon": "chart-area",
+    "label": "metrics",
+    "blockdef": {
+      "meta": {
+        "view": "web",
+        "url": "http://localhost:3000",
+        "pinnedurl": "http://localhost:3000"
+      }
+    }
   }
 }
