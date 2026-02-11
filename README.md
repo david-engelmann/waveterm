@@ -1,0 +1,2 @@
+# waveterm
+personal waveterm configuration
