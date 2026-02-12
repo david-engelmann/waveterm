@@ -1,32 +1,3 @@
 {
-  "bgv3-docker": {
-    "icon": "docker",
-    "label": "BGv3 App",
-    "color": "#0db7ed",
-    "display:order": 10,
-    "blockdef": {
-      "meta": {
-        "view": "term",
-        "controller": "shell",
-        "term:localshellpath": "/bin/zsh",
-        "cmd:cwd": "/Users/david/bg/bgv3",
-        "cmd:initscript.zsh": "/Users/david/.config/waveterm/scripts/bgv3_init.zsh"
-      }
-    }
-  },
-  "staging-refresh-docker": {
-    "icon": "docker",
-    "label": "Staging Refresh",
-    "color": "#ffa500",
-    "display:order": 11,
-    "blockdef": {
-      "meta": {
-        "view": "term",
-        "controller": "shell",
-        "term:localshellpath": "/bin/zsh",
-        "cmd:cwd": "/Users/david/bg/staging-refresh",
-        "cmd:initscript.zsh": "/Users/david/.config/waveterm/scripts/staging_refresh_init.zsh"
-      }
-    }
-  }
+
 }

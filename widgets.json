@@ -128,5 +128,35 @@
         "pinnedurl": "http://localhost:3000"
       }
     }
+  },
+  "bgv3-docker": {
+    "icon": "docker",
+    "label": "BGv3 App",
+    "color": "#0db7ed",
+    "display:order": 10,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "cmd",
+        "cmd": "/bin/zsh /Users/david/.config/waveterm/scripts/bgv3_init.zsh",
+        "cmd:clearonstart": true,
+        "cmd:closeonexit": false
+      }
+    }
+  },
+  "staging-refresh-docker": {
+    "icon": "docker", 
+    "label": "Staging Refresh",
+    "color": "#ff9500",
+    "display:order": 11,
+    "blockdef": {
+      "meta": {
+        "view": "term",
+        "controller": "cmd",
+        "cmd": "/bin/zsh /Users/david/.config/waveterm/scripts/staging_refresh_init.zsh",
+        "cmd:clearonstart": true,
+        "cmd:closeonexit": false
+      }
+    }
   }
 }
