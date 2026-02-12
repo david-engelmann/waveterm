@@ -1,8 +1,6 @@
 {
   "bgv3-app-local": {
     "display:order": 5,
-    "conn:type": "local",
-    "conn:wshenabled": true,
     "conn:shellpath": "/bin/zsh",
     "term:theme": "one-dark",
     "term:fontfamily": "Berkeley Mono",
@@ -11,8 +9,6 @@
   },
   "staging-refresh-local": {
     "display:order": 6,
-    "conn:type": "local",
-    "conn:wshenabled": true,
     "conn:shellpath": "/bin/zsh",
     "term:theme": "one-dark",
     "term:fontfamily": "Berkeley Mono",
